@@ -12,26 +12,34 @@ body {
 
 h1 {
   font-size: 5rem;
+  width: 50%;
 }
 
 span {
+  display: inline-block;
   color: midnightblue;
+  /* white-space: nowrap; */
 }
 
 .card {
   display: inline-flex;
   height: 200px;
-  flex: 0.5;
+  width: 45%;
+  flex: 0.4;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .card-title {
-  display: block;
-  flex: 0.25;
 }
 
 .card-text {
-  display: flex;
-  width: 550px;
 }
 
 .tile-image {
