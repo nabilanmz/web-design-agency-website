@@ -12,20 +12,21 @@ body {
 
 h1 {
   font-size: 5rem;
-  width: 50%;
 }
 
 span {
-  display: inline-block;
   color: midnightblue;
-  /* white-space: nowrap; */
+}
+
+.tile-image {
+  float: left;
+  height: 200px;
+  margin-right: 50px;
+
 }
 
 .card {
-  display: inline-flex;
-  height: 200px;
   width: 45%;
-  flex: 0.4;
 }
 
 .left {
@@ -36,19 +37,32 @@ span {
   float: right;
 }
 
-.card-title {
-}
-
-.card-text {
-}
-
-.tile-image {
-  float: left;
-}
-
-
 footer {
   text-align: right;
   color: midnightblue;
 }
 
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+.card img {
+  margin-bottom: 10px;
+  width: 100%;
+  display: inline;
+  object-fit: cover;
+}
+}
